@@ -7,10 +7,11 @@ module.exports = {
         squgily: "url('/src/assets/divider.svg')",
         topbar:
           "linear-gradient(to right, rgb(217, 70, 239), rgb(220, 38, 38), rgb(251, 146, 60))",
+
       },
     },
     colors: {
-      p_text: "#b1b1b1",
+      p_text: "#ccc",
       head_text: "#eaeaea",
       navbar_back: "rgba(17, 17, 17, 0.8)",
       item_back: "#161616",

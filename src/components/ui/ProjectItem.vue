@@ -21,6 +21,6 @@
 <script>
 export default {
   setup() {},
-  props: ["name", "image", "description", "tech", "link"],
+  props: ["name", "image", "description", "link"],
 };
 </script>

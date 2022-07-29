@@ -1,12 +1,15 @@
 <template>
-  <a
-    class="border-b-2 border-link_border hover:border-link_border_hover hover:text-link_text_hover transition-colors text-link"
-    :href="link"
-    ><slot></slot
-  ></a>
+<router-link
+        class="hover:bg-action_back font-theme_bold px-3 py-1 pb-2 rounded-md transition-all sm:px-6 sm:py-2 lg:text-base"
+        :to="link"
+      >
+        <slot>{{name}}
+      </slot
+  >
+      </router-link>
 </template>
 <script>
 export default {
-  props: ["link"],
+  props: ["link","name"],
 };
 </script>

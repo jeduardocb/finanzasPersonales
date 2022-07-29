@@ -1,5 +1,10 @@
 <template>
-  <div class="flex flex-col gap-8">
+    <Title
+        key="01"
+        title="Finanzas Personales"
+        description="lorem ipsum"
+      />
+  <div class="flex flex-col gap-8 -topbar">
     <p
       class="text-sm md:text-base leading-relaxed slg:text-lg lg:leading-loose"
     >
@@ -49,7 +54,7 @@
       or <LinkBtn link="https://twitter.com/mightykillrr">Twitter</LinkBtn>. I
       post very rarely so you might not find many posts on either.
     </p>
-    <hr class="bg-squgily bg-repeat border-0 h-[6px] opacity-25 my-6" />
+    <hr class="bg-squgily bg-repeat border-0 h-[6px] my-6" />
     <div class="flex flex-col gap-5">
       <h3 class="font-theme_bold text-head_text text-3xl">Work</h3>
       <div class="flex flex-col gap-8 py-4">
@@ -73,14 +78,9 @@
   </div>
 </template>
 <script>
-import { useWorkStore } from "../store/workStore";
+import Title from "../components/ui/Title.vue";
 
 export default {
-  setup() {
-    const workStore = useWorkStore();
-    const works = workStore.getAllWorks;
-
-    return { works };
-  },
+  components: {Title},
 };
 </script>
