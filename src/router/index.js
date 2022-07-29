@@ -7,6 +7,7 @@ import Bonos_Fondos from "../views/Bonos_Fondos.vue";
 import Acciones from "../views/Acciones.vue";
 import CalculadoraBonos from "../views/CalculadoraBonos.vue";
 import CalculadoraAcciones from "../views/CalculadoraAcciones.vue";
+import CalculaduraInteres from "../views/CalculadoraInteres.vue";
 
 const routes = [
   {
@@ -48,6 +49,11 @@ const routes = [
     path: "/calculadora-acciones",
     name: "calculadora-acciones",
     component: CalculadoraAcciones,
+  },
+  {
+    path: "/calculadora-interes",
+    name: "calculadora-interes",
+    component: CalculaduraInteres,
   },
   {
     path: "/:pathMatch(.*)*",
