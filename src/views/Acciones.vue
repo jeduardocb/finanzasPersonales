@@ -19,7 +19,7 @@
       />
     </div>
   </div>
-  <div class="grid grid-flow-col grid-rows-1 grid-cols-4 gap-10 mt-5 mb-5">
+  <div class="grid grid-flow-col grid-rows-1 grid-cols-4 gap-10 mt-5 mb-5 text-center">
     <div class="col-span-2">
       <MainProjectItem
         key="proj.id"
@@ -33,20 +33,19 @@
         name="Acciones Preferentes"
         description="Las acciones preferentes son acciones que se caracterizan por darle al accionista algún valor adicional al de las acciones ordinarias."
       />
-      <div class="items-center mt-10">
-      <LinkBtn link="/calculadora-acciones" name="Calculadora" />
-      </div>
     </div>
   </div>
-  <hr class="bg-squgily bg-repeat border-0 h-[6px]" />
+  <div class="flex flex-col items-center justify-center">
+    <ActionButton link="/calculadora-bonos">Calculadora de acciones</ActionButton>
+  </div>
 </template>
 
 <script>
 import MainProjectItem from "../components/ui/MainProjectItem.vue";
 import Title from "../components/ui/Title.vue";
-import LinkBtn from "../components/ui/LinkBtn.vue";
+import ActionButton from "../components/ui/ActionButton.vue";
 
 export default {
-  components: { MainProjectItem, Title, LinkBtn },
+  components: { MainProjectItem, Title, ActionButton },
 };
 </script>
