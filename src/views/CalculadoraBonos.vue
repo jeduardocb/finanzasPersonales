@@ -10,7 +10,10 @@
           </p>
         </div>
         <div class="flex flex-col items-center justify-center mt-20">
-          <p>Precio del Bono (VP) = ${{ vp1 }}</p>
+          <p>
+            Precio del Bono (VP) = <br />
+            <span class="text-3xl text-warning"> $ {{ vp1 }} </span>
+          </p>
         </div>
       </div>
       <div class="mt-5 md:mt-0 md:col-span-2">
@@ -110,7 +113,11 @@
           </p>
         </div>
         <div class="flex flex-col items-center justify-center mt-20">
-          <p>Precio del Bono (VP) = ${{ vp2 }}</p>
+          <p>
+            Precio del Bono (VP) =
+            <br />
+            <span class="text-3xl text-warning">${{ vp2 }} </span>
+          </p>
         </div>
       </div>
       <div class="mt-5 md:mt-0 md:col-span-2">
