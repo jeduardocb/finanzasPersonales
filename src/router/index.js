@@ -8,6 +8,7 @@ import Acciones from "../views/Acciones.vue";
 import CalculadoraBonos from "../views/CalculadoraBonos.vue";
 import CalculadoraAcciones from "../views/CalculadoraAcciones.vue";
 import CalculadoraWACC from "../views/CalculadoraWACC.vue";
+import CalculadoraInteres from "../views/CalculadoraInteres.vue";
 
 const routes = [
   {
@@ -54,6 +55,11 @@ const routes = [
     path: "/calculadora-wacc-capm",
     name: "calculadora-wacc-capm",
     component: CalculadoraWACC,
+  },
+  {
+    path: "/calculadora-interes",
+    name: "calculadora-interes",
+    component: CalculadoraInteres,
   },
   {
     path: "/:pathMatch(.*)*",
