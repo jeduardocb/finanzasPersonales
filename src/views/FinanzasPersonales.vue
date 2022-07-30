@@ -1,10 +1,9 @@
 <template>
-  <Title
-    key="01"
-    title="Finanzas Personales"
-    description="Se refieren al manejo y administración de dinero y bienes de un individuo o familia, esto con el objetivo de alcanzar una satisfacción económica."
-  />
-
+    <Title
+        key="01"
+        title="Finanzas Personales"
+        description="Aplicación de los principios de finanzas en la gestión de los recursos de un individuo, busca que los individuos conozcan las herramientas o productos financieros a los que tienen acceso y enseña a optimizar el manejo de sus recursos."
+      />
   <div class="flex flex-col gap-8 -topbar">
     <h3 class="font-theme_bold text-2xl text-head_text">
       Componentes de una planeación personal.

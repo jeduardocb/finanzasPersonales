@@ -33,7 +33,9 @@
         name="Acciones Preferentes"
         description="Las acciones preferentes son acciones que se caracterizan por darle al accionista algún valor adicional al de las acciones ordinarias."
       />
+      <div class="items-center mt-10">
       <LinkBtn link="/calculadora-acciones" name="Calculadora" />
+      </div>
     </div>
   </div>
   <hr class="bg-squgily bg-repeat border-0 h-[6px]" />
