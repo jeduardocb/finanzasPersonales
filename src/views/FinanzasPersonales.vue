@@ -50,7 +50,7 @@
     </ul>
     <div class="flex flex-col items-center">
       <ActionButton link="/calculadora-interes"
-        >Calculadora de créditos</ActionButton
+        >Calculadora de interés</ActionButton
       >
     </div>
     <MainProjectItem
