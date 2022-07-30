@@ -3,7 +3,6 @@
 set -e
 # build
 npm run build
-npm run dev
 # navigate into the build output directory
 cd dist
 # if you are deploying to a custom domain
