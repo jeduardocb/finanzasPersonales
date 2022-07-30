@@ -8,7 +8,7 @@
           </h3>
         </div>
         <div class="flex flex-col items-center justify-center mt-20">
-          <p>Valor Futuro (VF) = ${{ vf1 }}</p>
+          <p class="text-3xl text-warning">${{ vf1 }}</p>
         </div>
       </div>
       <div class="mt-5 md:mt-0 md:col-span-2">
@@ -106,7 +106,7 @@
           </h3>
         </div>
         <div class="flex flex-col items-center justify-center mt-20">
-          <p>Valor Presente (VP) = ${{ vp2 }}</p>
+          <p class="text-3xl text-warning">${{ vp2 }}</p>
         </div>
       </div>
       <div class="mt-5 md:mt-0 md:col-span-2">
