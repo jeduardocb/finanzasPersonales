@@ -23,6 +23,7 @@ module.exports = {
       btn_back: "#2e2e2e",
       btn_text: "#f6f6f6",
       link_text_hover: "#6366F1",
+      highlight_text: "#99c0ff",
       link_border_hover: "rgb(99,102,241, 0.4)",
       link_border: "#6c6c6c",
       link: "#d9d9d9",
