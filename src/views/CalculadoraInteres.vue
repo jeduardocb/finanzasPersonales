@@ -211,16 +211,18 @@ export default {
   }),
   methods: {
     calculateFutureValue() {
+      console.log("asd");
       var r = this.i1 / 100 / parseInt(this.capitalizacion1);
       var n = this.n1 * parseInt(this.capitalizacion1);
-      this.vf1 = this.vp1 * Math.pow(1 + r, n);
-      this.vf1 = this.vp1.toFixed(2);
+      var x = Math.pow(1 + r, n);
+      this.vf1 = this.vp1 * x;
+      this.vf1 = this.vf1.toFixed(2);
     },
     calculatePresentValue() {
       var r = this.i2 / 100 / parseInt(this.capitalizacion2);
       var n = this.n2 * parseInt(this.capitalizacion2);
       this.vp2 = this.vf2 / Math.pow(1 + r, n);
-      this.vp2 = this.vf2.toFixed(2);
+      this.vp2 = this.vp2.toFixed(2);
     },
   },
 };
