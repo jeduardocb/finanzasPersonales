@@ -6,12 +6,18 @@ module.exports = {
       backgroundImage: {
         squgily: "url('/src/assets/divider.svg')",
         topbar:
-          "linear-gradient(to right, rgb(217, 70, 239), rgb(220, 38, 38), rgb(251, 146, 60))",
+        "linear-gradient(to right, rgb(217, 70, 239), rgb(220, 38, 38), rgb(251, 146, 60))",
+        button:
+        "linear-gradient(to right, rgba(118,184,255,1), rgba(107,151,255,1), rgba(68,211,255,1))",
+        error_msg:
+          "linear-gradient(to right, rgb(255, 99, 117), rgb(255, 53, 77), rgb(251, 146, 60))",
 
       },
     },
     colors: {
       p_text: "#ccc",
+      input_black: "#000000",
+      warning: "#ffff",
       head_text: "#eaeaea",
       navbar_back: "rgba(17, 17, 17, 0.8)",
       item_back: "#161616",

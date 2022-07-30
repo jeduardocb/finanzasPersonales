@@ -12,17 +12,17 @@
               <div class="grid rows-3 gap-6">
                 <div class="sm:col-span-3">
                   <label for="valorPresente" class="block text-sm font-medium">Valor Presente (VP)</label>
-                  <input v-model="vp1" type="number" name="valorPresente" id="valorPresente" class="mt-1 p-1 block w-full sm:text-sm border-gray-300 rounded-sm" />
+                  <input v-model="vp1" type="number" name="valorPresente" id="valorPresente" class="mt-1 p-1 block w-full sm:text-md text-input_black rounded-sm" />
                 </div>
 
                 <div class="sm:col-span-3">
                   <label for="rendimiento1" class="block text-sm font-medium text-gray-700">Tasa de interés (i)</label>
-                  <input v-model="i1" type="number" name="rendimiento1" id="rendimiento1" class="mt-1 p-1  block w-full shadow-sm sm:text-sm border-gray-300 rounded-sm" />
+                  <input v-model="i1" type="number" name="rendimiento1" id="rendimiento1" class="mt-1 p-1  block w-full sm:text-md text-input_black rounded-sm" />
                 </div>
 
                 <div class="sm:col-span-3">
                   <label for="capitalizacion1" class="block text-sm font-medium text-gray-700">Plazo de capitalización</label>
-                  <select name="capitalizacion1" id="capitalizacion1" v-model="capitalizacion1" class="mt-1 p-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-sm">
+                  <select name="capitalizacion1" id="capitalizacion1" v-model="capitalizacion1" class="mt-1 p-1 block w-full sm:text-md text-input_black rounded-sm">
                     <option value="1">Anual</option>
                     <option value="2">Semestral</option>
                     <option value="4">Trimestral</option>
@@ -32,12 +32,12 @@
 
                 <div class="sm:col-span-3">
                   <label for="plazo1" class="block text-sm font-medium text-gray-700">Plazo (n)</label>
-                  <input v-model="n1" type="number" name="plazo1" id="plazo1" class="mt-1 p-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-sm" />
+                  <input v-model="n1" type="number" name="plazo1" id="plazo1" class="mt-1 p-1 block w-full sm:text-md text-input_black rounded-sm" />
                 </div>
               </div>
             </div>
             <div class="px-4 py-3 bg-gray-50 text-center sm:px-6">
-              <button @click="calculateFutureValue()" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">Calcular</button>
+              <button @click="calculateFutureValue()" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white hover:bg-button hover:text-input_black hover:border-warning">Calcular</button>
             </div>
             <div>
               <p>Valor Futuro (VF) =  ${{vf1}}</p>
@@ -66,21 +66,21 @@
               <div class="grid rows-3 gap-6">
                 <div class="sm:col-span-3">
                   <label for="nominal2" class="block text-sm font-medium">Valor Futuro (VF)</label>
-                  <input type="number" v-model="vf2" name="nominal2" id="nominal2" class="mt-1 p-1 block w-full sm:text-sm border-gray-300 rounded-sm" />
+                  <input type="number" v-model="vf2" name="nominal2" id="nominal2" class="mt-1 p-1 block w-full sm:text-md text-input_black rounded-sm" />
                 </div>
 
                 <div class="sm:col-span-3">
                   <label for="rendimiento2" class="block text-sm font-medium text-gray-700">% Tasa de interés (i)</label>
-                  <input v-model="i2" type="number" name="rendimiento2" id="rendimiento2" class="mt-1 p-1  block w-full shadow-sm sm:text-sm border-gray-300 rounded-sm" />
+                  <input v-model="i2" type="number" name="rendimiento2" id="rendimiento2" class="mt-1 p-1  block w-full sm:text-md text-input_black rounded-sm" />
                 </div>
 
                 <div class="sm:col-span-3">
                   <label for="plazo2" class="block text-sm font-medium text-gray-700">Plazo (n) en años</label>
-                  <input v-model="n2" type="number" name="plazo2" id="plazo2" class="mt-1 p-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-sm" />
+                  <input v-model="n2" type="number" name="plazo2" id="plazo2" class="mt-1 p-1 block w-full sm:text-md text-input_black rounded-sm" />
                 </div>
                 <div class="sm:col-span-3">
                   <label for="capitalizacion2" class="block text-sm font-medium text-gray-700">Plazo de capitalización</label>
-                  <select name="capitalizacion2" id="capitalizacion2" v-model="capitalizacion2" class="mt-1 p-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-sm">
+                  <select name="capitalizacion2" id="capitalizacion2" v-model="capitalizacion2" class="mt-1 p-1 block w-full sm:text-md text-input_black rounded-sm">
                     <option value="1">Anual</option>
                     <option value="2">Semestral</option>
                     <option value="4">Trimestral</option>
@@ -90,7 +90,7 @@
               </div>
             </div>
             <div class="px-4 py-3 bg-gray-50 text-center sm:px-6">
-              <button class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700" @click="calculatePresentValue()">Calcular</button>
+              <button class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white hover:bg-button hover:text-input_black hover:border-warning" @click="calculatePresentValue()">Calcular</button>
             </div>
             <div>
               <p>Valor Presente (VP) = ${{vp2}}</p>
